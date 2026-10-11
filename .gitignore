@@ -1,0 +1,56 @@
+securebank/data_sources/*
+**/__pycache__/
+*.csv
+__pycache__/
+
+# Exclude data files from commit
+securebank/data_sources/
+
+# Exclude enviroments
+venv/
+.venv/
+venv
+
+
+# Data
+securebank/data_sources/
+*.csv
+*.parquet
+
+# Logs
+securebank/logs/
+analysis/securebank/logs/
+*.log
+
+# Experiment outputs
+securebank/storage/experiments/
+securebank/experiment_results/
+securebank/models_storage/
+
+# Notebook / analysis exports
+analysis/*.html
+analysis/*.ipynb
+*.ipynb_checkpoints/
+
+# Model artifacts
+*.joblib
+*.pkl
+# School assignment materials
+IMPLEMENATION_INSTRUCTIONS.md
+.github/workflows/classroom.yml
+test/grade_runner.py
+
+# Operating system files
+.DS_Store
+
+# Credentials and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# School dataset download script
+setup.sh
+
+# Sample transaction data
+securebank/test.json
